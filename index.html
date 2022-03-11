@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete responsive app landing page website design</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
+
+    <!-- font awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- custom link css link -->
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<!-- header section starts -->
+
+<header>
+
+    <a href="#" class="logo">LOGO</a>
+
+    <div id="menu-bar" class="fas fa-bars"></div>
+
+    <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#features">Features</a>
+        <a href="#about">About</a>
+        <a href="#usage">Usage</a>
+        <a href="#review">Review</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+</header>
+
+
+<!-- header section ends -->
+
+<!-- home section starts -->
+
+<section class="home" id="home">
+
+    <div class="content">
+        <h3>app landing page</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. At quod, repellat quos dolorem dolorum quaerat
+            corporis aliquam voluptatem commodi. Natus neque pariatur veniam, aperiam amet nulla praesentium provident
+            excepturi veritatis. Beatae itaque consectetur provident voluptates facilis quos. Consectetur deleniti quam
+            non cupiditate sed tempore voluptatem, deserunt eveniet nemo modi dolorem.</p>
+        <a href="#" class="btn">get started</a>
+    </div>
+
+    <div class="swiper mySwiper image-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide"><img src="shot-01.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="shot-02.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="shot-03.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="shot-04.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="shot-05.jpg" alt=""></div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- home section ends -->
+
+<!-- features section starts -->
+
+<section class="features" id="features">
+
+    <h1 class="heading">app features</h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <i class="fas fa-magic"></i>
+            <h3>smooth design</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque enim ad neque. Voluptatem alias beatae
+                accusamus laudantium nisi assumenda libero.</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-shield-alt"></i>
+            <h3>privacy protect</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque enim ad neque. Voluptatem alias beatae
+                accusamus laudantium nisi assumenda libero.</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-globe"></i>
+            <h3>multiple language</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque enim ad neque. Voluptatem alias beatae
+                accusamus laudantium nisi assumenda libero.</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-map-marker-alt"></i>
+            <h3>location tracking</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque enim ad neque. Voluptatem alias beatae
+                accusamus laudantium nisi assumenda libero.</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-cogs"></i>
+            <h3>powerfull settings</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque enim ad neque. Voluptatem alias beatae
+                accusamus laudantium nisi assumenda libero.</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-headset"></i>
+            <h3>24 x 7 service</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque enim ad neque. Voluptatem alias beatae
+                accusamus laudantium nisi assumenda libero.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- features section ends -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- script part -->
+
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+<script>
+
+    var swiper = new Swiper(".image-slider", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        coverflowEffect: {
+            rotate: 0,
+            stretch: 0,
+            depth: 100,
+            modifier: 2,
+            slideShadows: true,
+        },
+        loop: true,
+        autoplay: {
+            delay: 2000,
+            disableOnInteraction: false,
+        },
+    });
+
+    let menu = document.querySelector('#menu-bar');
+    let navbar = document.querySelector('.navbar');
+
+    menu.addEventListener('click', () => {
+        menu.classList.toggle('fa-times');
+        navbar.classList.toggle('nav-toggle');
+    });
+
+    window.onscroll = () => {
+        menu.classList.remove('fa-times');
+        navbar.classList.remove('nav-toggle');
+    }
+
+</script>
+
+
+<body>
+
+</body>
+
+</html>
